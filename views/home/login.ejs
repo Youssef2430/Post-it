@@ -1,8 +1,27 @@
 <%- include ('../_partial/_header'); -%> 
 
- 
-<div class="col-md-8">
-    <div class="panel panel-default">
+<style>
+
+.panel{
+        background: rgba(240,230,220, .7);
+        box-shadow: 0 -1px 10px rgba(0, 0, 0, .7);
+    }
+    .slide {
+    position: relative;
+    padding: 5vh 5%;
+    min-height: 100vh;
+    box-sizing: border-box;
+    transform-style: inherit;
+    }
+    .row-centered {text-align:center;}
+    .col-centered { display:inline-block; float:none; margin-right:-4px;}
+    
+    </style>
+
+<div id="slide1" class="slide">
+<div class="row row-centered">
+<div class="col-md-8 col-centered">
+    <div class="panel">
  
         <div class="panel-heading">
             <h3>Log In</h3>
@@ -25,5 +44,7 @@
             </form>
         </div>
     </div>
+</div>
+</div>
 </div>
 <%- include ('../_partial/_footer'); -%> 

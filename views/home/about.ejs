@@ -1,6 +1,91 @@
 <%- include ('../_partial/_header'); -%> 
 
- 
-<h1>About page coming up soon...</h1>
+<style>
+
+h1 {
+   font-size: 250%
+}
+
+p {
+  font-size: 140%;
+  line-height: 150%;
+  color: #333;
+}
+
+.slide {
+  position: relative;
+  padding: 10vh 5%;
+  min-height: 100vh;
+  box-sizing: border-box;
+  transform-style: inherit;
+}
+
+img {
+  position: absolute;
+  top: 50%;
+  left: 80%;
+  width: 320px;
+  height: 240px;
+  transform: translateZ(.25px) scale(.75) translateX(-94%) translateY(-100%) rotate(2deg);
+  padding: 10px;
+  border-radius: 5px;
+  background: rgba(240,230,220, .7);
+  box-shadow: 0 0 8px rgba(0, 0, 0, .7);
+}
+
+img:last-of-type {
+  transform: translateZ(.4px) scale(.6) translateX(-104%) translateY(-40%) rotate(-5deg);
+}
+
+
+.title {
+  width: 70%;
+  padding: 5%;
+  border-radius: 5px;
+  background: rgba(240,230,220, .7);
+  box-shadow: 0 0 8px rgba(0, 0, 0, .7);
+  margin-top: 30px;
+  margin-bottom: 10px;
+  background-image: url("https://lorempixel.com/640/480/abstract/6/");
+  z-index:2;
+}
+
+
+.header {
+  text-align: center;
+  font-size: 175%;
+  color: rgba(240,230,220, .7);
+  text-shadow: 0 2px 2px #000;
+}
+
+
+#title h1 {
+ transform: translateZ(.25px) scale(.75);
+ transform-origin: 50% 100%;
+
+}
+</style>
+
+  
+  <div id="slide1" class="slide">
+    <div class="title">
+      <h1>What Post-it does ?</h1>
+      <p>It's a web application that lets you create posts and share them on a feed.</p>
+    </div>
+  
+  
+    <div class="title">
+      <h1>Who did it ?</h1>
+      <p>My name's Youssef Chouay, and that's my first time creating a web application from scratch. I hope you enjoy it !</p>
+    </div>
+    <img src="./uploads/images/nodejs.png">
+    <img src="./uploads/images/Javascript.png"> 
+  
+  
+
+  </div>
+  
+  
+
 
 <%- include ('../_partial/_footer'); -%> 
